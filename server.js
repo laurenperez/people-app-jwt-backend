@@ -15,7 +15,6 @@ mongoose.connection
   .on("close", () => console.log("Connection Closed"))
   .on("error", (error)=> console.log(error))
   
-
 // Model
 const PeopleSchema = new mongoose.Schema({
   name: String,
@@ -35,7 +34,7 @@ app.get("/", (req, res) => {
   res.send("Hello World")
 })
 
-// IDUCS
+// IDUCES
 
 // Index
 app.get("/people", async (req, res) => {
